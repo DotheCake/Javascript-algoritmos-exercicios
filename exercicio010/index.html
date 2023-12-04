@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label>Informe seu salário por hora: </label>
+            <input id="sal_hora">
+        </p>
+        <p>
+            <label>Informe a quantidade de horas trabalhadas: </label>
+            <input id="horas_trabalhadas">
+        </p>
+        <p>
+            <button type="button" onclick="calcularsalario()">Calcular salário</button>
+        </p>
+    </form>
+    <p>
+        + Salário Bruto : R$ <strong id="salario_bruto"></strong><br>
+	- IR (11%) : R$ <strong id="ir"></strong><br>
+	- INSS (8%) : R$ <strong id="inss"></strong><br>
+	- Sindicato ( 5%) : R$ <strong id="sindicato"></strong><br>
+	= Salário Liquido : R$ <strong id="salario_liquido"></strong><br>
+    </p>
+    <script src="app.js"></script>
+</body>
+</html>
